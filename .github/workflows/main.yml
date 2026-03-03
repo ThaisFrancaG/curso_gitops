@@ -5,6 +5,8 @@ on:
 
 jobs:
   greet:
+    env:
+      MY_ENV: "ARTHUR"
     runs-on: ubuntu-latest
     steps:
       - name: saudacao ao usuario
@@ -12,6 +14,10 @@ jobs:
       - run: ls -l
       - uses: actions/checkout@v6
       - run: ls -l
+      - name: execucao de um script multi-linha
+        run: |
+            echo: "olá $MY_ENV"
+            echo: "Olá, $GITHUB_ACTOR"
 
 
 
