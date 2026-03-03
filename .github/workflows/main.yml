@@ -1,0 +1,14 @@
+name: Workflow Inicial Demo Caixa
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: saudacao ao usuario
+        run: echo "Alo mundo"
+
+
+
