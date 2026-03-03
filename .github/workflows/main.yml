@@ -2,6 +2,8 @@ name: Workflow Inicial Demo Caixa
 
 on: 
   workflow_dispatch:
+  issues:
+    types: [opened, edited]
 
 jobs:
   greet:
