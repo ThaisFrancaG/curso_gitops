@@ -18,8 +18,8 @@ jobs:
       - run: ls -l
       - name: execucao de um script multi-linha
         run: |
-            echo: "olá $MY_ENV"
-            echo: "Olá, $GITHUB_ACTOR"
+            echo "olá $MY_ENV"
+            echo "Olá, $GITHUB_ACTOR"
 
 
 
